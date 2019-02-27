@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_diff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="生成差分包"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_patch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="差分包合并"
+        app:layout_constraintTop_toBottomOf="@id/btn_diff" />
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="生成差分包测试"
+        android:textSize="33sp"
+        android:textColor="#ff0033"
+        app:layout_constraintTop_toBottomOf="@+id/btn_patch" />
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_msg"
+        android:scaleType="fitXY"/>
+
+</android.support.constraint.ConstraintLayout>
